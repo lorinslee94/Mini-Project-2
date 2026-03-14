@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "obnoxious": {
+      "num_cases": 10,
+      "num_correct": 9,
+      "accuracy": 0.9
+    },
+    "irrelevant": {
+      "num_cases": 10,
+      "num_correct": 10,
+      "accuracy": 1.0
+    },
+    "relevant": {
+      "num_cases": 10,
+      "num_correct": 9,
+      "accuracy": 0.9
+    },
+    "small_talk": {
+      "num_cases": 5,
+      "num_correct": 3,
+      "accuracy": 0.6
+    },
+    "hybrid": {
+      "num_cases": 8,
+      "num_correct": 4,
+      "accuracy": 0.5
+    },
+    "multi_turn": {
+      "num_cases": 7,
+      "num_correct": 4,
+      "accuracy": 0.5714285714285714
+    }
+  },
+  "overall_accuracy": 0.78
+}

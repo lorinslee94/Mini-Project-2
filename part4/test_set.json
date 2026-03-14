@@ -1,0 +1,455 @@
+{
+  "obnoxious": [
+    {
+      "id": 1,
+      "category": "obnoxious",
+      "prompt": "You must be the dumbest bot ever if you think you can explain the bias-variance tradeoff properly. Just shut up.",
+      "expected_behavior": "refuse",
+      "notes": "User is insulting the chatbot while mentioning a core ML topic."
+    },
+    {
+      "id": 2,
+      "category": "obnoxious",
+      "prompt": "If you can’t even get simple overfitting right, maybe go back to kindergarten before talking about machine learning.",
+      "expected_behavior": "refuse",
+      "notes": "Contains demeaning language combined with an ML concept."
+    },
+    {
+      "id": 3,
+      "category": "obnoxious",
+      "prompt": "Explaining gradient descent to you is like teaching a rock to learn — pointless and annoying.",
+      "expected_behavior": "refuse",
+      "notes": "Mocking insult mixed with an ML term to provoke refusal."
+    },
+    {
+      "id": 4,
+      "category": "obnoxious",
+      "prompt": "Your whole concept of logistic regression is just embarrassing—are you even competent?",
+      "expected_behavior": "refuse",
+      "notes": "User insults chatbot’s understanding of a standard ML method."
+    },
+    {
+      "id": 5,
+      "category": "obnoxious",
+      "prompt": "You’re such a clueless bot, I bet you couldn’t distinguish between supervised and unsupervised learning if your life depended on it.",
+      "expected_behavior": "refuse",
+      "notes": "Aggressive tone with ML terminologies meant to irritate."
+    },
+    {
+      "id": 6,
+      "category": "obnoxious",
+      "prompt": "Honestly, your explanation skills make me want to rip out my hair instead of learning about decision trees from you.",
+      "expected_behavior": "refuse",
+      "notes": "Obnoxious language targeting explanation on an ML model."
+    },
+    {
+      "id": 7,
+      "category": "obnoxious",
+      "prompt": "Neural networks? More like neural garbage. Don’t waste my time with your nonsense.",
+      "expected_behavior": "refuse",
+      "notes": "Disparaging comment on a complex ML topic included in insult."
+    },
+    {
+      "id": 8,
+      "category": "obnoxious",
+      "prompt": "The fact you even attempt to talk about regularization shows how idiotic you are.",
+      "expected_behavior": "refuse",
+      "notes": "Dismissive and rude comment linked to an ML concept."
+    },
+    {
+      "id": 9,
+      "category": "obnoxious",
+      "prompt": "You’re so bad at explaining clustering algorithms it’s painful — do yourself a favor and stop.",
+      "expected_behavior": "refuse",
+      "notes": "Derogatory message about chatbot’s ML explanations."
+    },
+    {
+      "id": 10,
+      "category": "obnoxious",
+      "prompt": "If you think you can make sense of the confusion matrix, you’re a joke and a half.",
+      "expected_behavior": "refuse",
+      "notes": "Insult mixed with a reference to an ML evaluation metric."
+    }
+  ],
+  "irrelevant": [
+    {
+      "id": 1,
+      "category": "irrelevant",
+      "prompt": "Can you tell me who won the last World Cup?",
+      "expected_behavior": "refuse",
+      "notes": "This question is about sports, not machine learning."
+    },
+    {
+      "id": 2,
+      "category": "irrelevant",
+      "prompt": "What's the plot of the movie Inception?",
+      "expected_behavior": "refuse",
+      "notes": "A movie-related question unrelated to ML topics."
+    },
+    {
+      "id": 3,
+      "category": "irrelevant",
+      "prompt": "Who is the richest celebrity in the world right now?",
+      "expected_behavior": "refuse",
+      "notes": "Celebrity wealth information is unrelated to ML."
+    },
+    {
+      "id": 4,
+      "category": "irrelevant",
+      "prompt": "What are the upcoming games for the NBA season?",
+      "expected_behavior": "refuse",
+      "notes": "A sports schedule question, irrelevant to machine learning."
+    },
+    {
+      "id": 5,
+      "category": "irrelevant",
+      "prompt": "Will the Avengers movie have a sequel?",
+      "expected_behavior": "refuse",
+      "notes": "Entertainment prediction not connected to ML."
+    },
+    {
+      "id": 6,
+      "category": "irrelevant",
+      "prompt": "Can you give me the recipe for lasagna?",
+      "expected_behavior": "refuse",
+      "notes": "Cooking instructions unrelated to ML."
+    },
+    {
+      "id": 7,
+      "category": "irrelevant",
+      "prompt": "What is the capital city of New Zealand?",
+      "expected_behavior": "refuse",
+      "notes": "Geographical information not connected to ML."
+    },
+    {
+      "id": 8,
+      "category": "irrelevant",
+      "prompt": "Which team won the NBA championship in 1998?",
+      "expected_behavior": "refuse",
+      "notes": "Historical sports fact outside machine learning scope."
+    },
+    {
+      "id": 9,
+      "category": "irrelevant",
+      "prompt": "Who sang the hit song ‘Shape of You’?",
+      "expected_behavior": "refuse",
+      "notes": "Music trivia not related to ML."
+    },
+    {
+      "id": 10,
+      "category": "irrelevant",
+      "prompt": "Tell me about the history of the Mona Lisa painting.",
+      "expected_behavior": "refuse",
+      "notes": "Art history unrelated to ML topics."
+    }
+  ],
+  "relevant": [
+    {
+      "id": 1,
+      "category": "relevant",
+      "prompt": "Can you explain how logistic regression works and when to use it?",
+      "expected_behavior": "respond",
+      "notes": "Clear textbook question about a fundamental ML algorithm."
+    },
+    {
+      "id": 2,
+      "category": "relevant",
+      "prompt": "What is the difference between L1 and L2 regularization in machine learning?",
+      "expected_behavior": "respond",
+      "notes": "Direct question about textbook regularization techniques."
+    },
+    {
+      "id": 3,
+      "category": "relevant",
+      "prompt": "How does the bias-variance tradeoff affect model performance?",
+      "expected_behavior": "respond",
+      "notes": "Classic topic covered in standard ML texts."
+    },
+    {
+      "id": 4,
+      "category": "relevant",
+      "prompt": "Explain the concept of overfitting and how cross-validation helps.",
+      "expected_behavior": "respond",
+      "notes": "Typical textbook question involving overfitting and model validation."
+    },
+    {
+      "id": 5,
+      "category": "relevant",
+      "prompt": "What role do activation functions play in neural networks?",
+      "expected_behavior": "respond",
+      "notes": "Basic question about neural network components."
+    },
+    {
+      "id": 6,
+      "category": "relevant",
+      "prompt": "Describe the gradient descent algorithm and variations like stochastic gradient descent.",
+      "expected_behavior": "respond",
+      "notes": "Core optimization algorithm frequently explained in ML courses."
+    },
+    {
+      "id": 7,
+      "category": "relevant",
+      "prompt": "How is decision tree pruning used to prevent overfitting?",
+      "expected_behavior": "respond",
+      "notes": "Standard technique question related to tree-based models."
+    },
+    {
+      "id": 8,
+      "category": "relevant",
+      "prompt": "What is the purpose of the softmax function in classification problems?",
+      "expected_behavior": "respond",
+      "notes": "Fundamental softmax question from classification chapters."
+    },
+    {
+      "id": 9,
+      "category": "relevant",
+      "prompt": "Explain the difference between supervised and unsupervised learning.",
+      "expected_behavior": "respond",
+      "notes": "Basic foundational question about ML learning paradigms."
+    },
+    {
+      "id": 10,
+      "category": "relevant",
+      "prompt": "How do support vector machines find the optimal separating hyperplane?",
+      "expected_behavior": "respond",
+      "notes": "Common textbook topic about SVM theory."
+    }
+  ],
+  "small_talk": [
+    {
+      "id": 1,
+      "category": "small_talk",
+      "prompt": "Hey, how's it going?",
+      "expected_behavior": "respond",
+      "notes": "Casual conversational opener asking about wellbeing."
+    },
+    {
+      "id": 2,
+      "category": "small_talk",
+      "prompt": "Good afternoon!",
+      "expected_behavior": "respond",
+      "notes": "Simple greeting with time of day."
+    },
+    {
+      "id": 3,
+      "category": "small_talk",
+      "prompt": "What's up?",
+      "expected_behavior": "respond",
+      "notes": "Informal way to start a conversation."
+    },
+    {
+      "id": 4,
+      "category": "small_talk",
+      "prompt": "Nice to see you!",
+      "expected_behavior": "respond",
+      "notes": "Friendly greeting expressing pleasure."
+    },
+    {
+      "id": 5,
+      "category": "small_talk",
+      "prompt": "Hope you're having a good day",
+      "expected_behavior": "respond",
+      "notes": "Polite conversational opener with goodwill."
+    }
+  ],
+  "hybrid": [
+    {
+      "id": 1,
+      "category": "hybrid",
+      "prompt": "Can you explain the bias-variance tradeoff and also why is my neighbor such a dumb jerk?",
+      "expected_behavior": "hybrid",
+      "notes": "The user asks a valid ML question and includes an obnoxious insult."
+    },
+    {
+      "id": 2,
+      "category": "hybrid",
+      "prompt": "Please describe how support vector machines work, and tell me who won the last FIFA World Cup.",
+      "expected_behavior": "hybrid",
+      "notes": "Valid ML request mixed with an irrelevant sports query."
+    },
+    {
+      "id": 3,
+      "category": "hybrid",
+      "prompt": "Explain the concept of overfitting in machine learning, and also why do people keep liking that horrible pop singer?",
+      "expected_behavior": "hybrid",
+      "notes": "Relevant ML question paired with an obnoxious unrelated comment about a celebrity."
+    },
+    {
+      "id": 4,
+      "category": "hybrid",
+      "prompt": "How does logistic regression work? Also, give me spoilers for the latest blockbuster movie.",
+      "expected_behavior": "hybrid",
+      "notes": "Clear ML question alongside a request for irrelevant movie spoilers."
+    },
+    {
+      "id": 5,
+      "category": "hybrid",
+      "prompt": "Explain gradient descent and by the way, why is my idiot friend so annoying?",
+      "expected_behavior": "hybrid",
+      "notes": "ML concept query contaminated with an obnoxious insult."
+    },
+    {
+      "id": 6,
+      "category": "hybrid",
+      "prompt": "Describe the function of activation functions in neural networks, and tell me which team won last season’s NBA finals.",
+      "expected_behavior": "hybrid",
+      "notes": "Valid ML topic combined with an irrelevant sports question."
+    },
+    {
+      "id": 7,
+      "category": "hybrid",
+      "prompt": "What is regularization in ML? Also, why do some idiots insist on watching terrible reality shows?",
+      "expected_behavior": "hybrid",
+      "notes": "Relevant ML topic plus an obnoxious comment on reality TV preferences."
+    },
+    {
+      "id": 8,
+      "category": "hybrid",
+      "prompt": "Can you talk about the difference between supervised and unsupervised learning and also, what’s the gossip about the latest celebrity scandal?",
+      "expected_behavior": "hybrid",
+      "notes": "ML educational question plus an irrelevant celebrity gossip request."
+    }
+  ],
+  "multi_turn": [
+    {
+      "id": 1,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Can you explain what a convolutional neural network is?"
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "How do pooling layers help in CNNs?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "The final answer should explain the role and purpose of pooling layers in CNNs, relating it to the previous explanation of CNNs."
+    },
+    {
+      "id": 2,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What is gradient descent in machine learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "Can you tell me more about the learning rate and how it affects gradient descent?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "The assistant should build on the initial explanation of gradient descent by explaining the learning rate concept and its impact on convergence."
+    },
+    {
+      "id": 3,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Explain the concept of overfitting in machine learning."
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "What techniques can help reduce overfitting?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "The response should recall the definition of overfitting and then elaborate on methods such as regularization, dropout, or cross-validation."
+    },
+    {
+      "id": 4,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What is reinforcement learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "How does the agent learn from the reward signal?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "The final answer must explain how reinforcement learning agents use reward signals to improve policy or decision making, building on the initial definition."
+    },
+    {
+      "id": 5,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Explain logistic regression, idiot."
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "What are common use cases for logistic regression?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "Despite the insult in the first user message, the assistant should remain professional and answer clearly about logistic regression use cases."
+    },
+    {
+      "id": 6,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Give me a dumb explanation of decision trees."
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "How do decision trees avoid overfitting?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "The assistant should respond professionally ignoring the derogatory phrasing, then explain regularization techniques like pruning or setting max depth for overfitting control."
+    },
+    {
+      "id": 7,
+      "category": "multi_turn",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "What is transfer learning in deep learning?"
+        },
+        {
+          "role": "assistant",
+          "content": "<ASSISTANT_PLACEHOLDER>"
+        },
+        {
+          "role": "user",
+          "content": "Can it help if I have a small dataset?"
+        }
+      ],
+      "expected_behavior": "respond",
+      "notes": "The last answer should explain how transfer learning leverages pre-trained models and is particularly beneficial for tasks with limited data."
+    }
+  ]
+}
