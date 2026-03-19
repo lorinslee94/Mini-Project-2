@@ -6,8 +6,26 @@ from openai import OpenAI
 
 from part3.head_agent import Head_Agent
 
+
 def get_secret(name):
     return st.secrets.get(name) or os.getenv(name)
+
+
+if "access_granted" not in st.session_state:
+    st.session_state.access_granted = False
+
+if not st.session_state.access_granted:
+    code = st.text_input("Enter access code", type="password")
+
+    if st.button("Enter"):
+        if code == get_secret("ACCESS_CODE"):
+            st.session_state.access_granted = True
+            st.rerun()
+        else:
+            st.error("Invalid access code")
+
+    st.stop()
+
 
 openai_api_key = get_secret("OPENAI_API_KEY")
 pinecone_api_key = get_secret("PINECONE_API_KEY")
